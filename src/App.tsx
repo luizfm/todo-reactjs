@@ -1,7 +1,8 @@
-import TodoWrapper from "./components/context/todo-context";
 import Header from "./components/header";
-import "./global.css";
 import Dashboard from "./pages/dashboard";
+import TodoWrapper from "./todo-context";
+
+import "./global.css";
 
 function App() {
   return (

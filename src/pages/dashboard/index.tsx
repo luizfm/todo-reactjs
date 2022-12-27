@@ -5,9 +5,9 @@ import { v4 } from "uuid";
 import { Button } from "../../components/button";
 import Checkbox from "../../components/checkbox";
 import Chip from "../../components/chip";
-import { TodoContext } from "../../components/context/todo-context";
 import EmptyTodoList from "../../components/empty-todo-list";
 import { Input } from "../../components/input";
+import { TodoContext } from "../../todo-context";
 
 import styles from "./styles.module.scss";
 
