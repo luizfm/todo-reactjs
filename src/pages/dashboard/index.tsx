@@ -30,6 +30,7 @@ export function Dashboard() {
     event?.preventDefault();
 
     addTodo({ id: v4(), isCompleted: false, label: taskLabel });
+    setTaskLabel("");
   }, [taskLabel]);
 
   const onToggleTodo = useCallback((todoId: string | number) => {
