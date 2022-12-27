@@ -1,0 +1,43 @@
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 0.5rem;
+  height: 3.25rem;
+  transition: opacity 0.1s ease-in;
+  padding: 1rem;
+  gap: 0.5rem;
+  line-height: 0;
+  font-size: 0.875rem;
+
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    background-color: var(--gray-300);
+  }
+
+  .icon {
+    height: 1.6rem;
+    width: 1.6rem;
+    min-width: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// Variants
+
+.blue {
+  background-color: var(--blue-dark);
+  color: var(--white);
+
+  .icon {
+    fill: var(--white);
+  }
+}

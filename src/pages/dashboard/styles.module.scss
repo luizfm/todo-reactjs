@@ -1,0 +1,52 @@
+.dashboard-container {
+  max-width: 46rem;
+  margin: 0 auto;
+
+  .todo-form {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: -1.6875rem;
+  }
+
+  .dashboard-todo-content {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+
+    .todo-list-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .created-tasks,
+      .done-tasks {
+        display: flex;
+        column-gap: 0.8rem;
+        font-weight: 700;
+      }
+
+      .created-tasks {
+        color: var(--blue);
+      }
+
+      .done-tasks {
+        color: var(--purple);
+        max-width: 7.25rem;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+
+    .todo-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.2rem;
+
+      .todo-list-item {
+        list-style: none;
+      }
+    }
+  }
+}

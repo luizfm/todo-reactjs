@@ -1,0 +1,10 @@
+.chip-container {
+  background-color: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+
+  .label {
+    color: var(--gray-200);
+    font-weight: 700;
+  }
+}

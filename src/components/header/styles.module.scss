@@ -1,0 +1,14 @@
+@import "../../config";
+
+.header-container {
+  height: 12.5rem;
+  background-color: var(--gray-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7.2rem 2.4rem 8rem;
+
+  .header-title {
+    @include visually-hidden;
+  }
+}
