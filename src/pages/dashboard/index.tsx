@@ -67,13 +67,13 @@ export function Dashboard() {
       </form>
       <div className={styles["dashboard-todo-content"]}>
         <div className={styles["todo-list-header"]}>
-          <p className={styles["created-tasks"]}>
-            Created tasks <Chip label={String(todosSize)} />
-          </p>
-          <p className={styles["done-tasks"]}>
-            Done
+          <div className={styles["created-tasks"]}>
+            <p>Created tasks</p> <Chip label={String(todosSize)} />
+          </div>
+          <div className={styles["done-tasks"]}>
+            <p>Done</p>
             <Chip label={doneTasksText} />
-          </p>
+          </div>
         </div>
         {todosSize > 0 ? (
           <ul className={styles["todo-list"]}>
